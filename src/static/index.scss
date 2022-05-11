@@ -1,0 +1,88 @@
+.wrapperLoader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -55px;
+  margin-top: -50px;
+}
+
+@for $i from 1 through 71 {
+  $deg: 5 * $i;
+  .wrapperLoader div:nth-child(#{$i}) {
+    transform: rotate(#{$deg}deg);
+  }
+}
+.wrapperLoader div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  transform-origin: 100% 50%;
+}
+.wrapperLoader div .bar {
+  position: absolute;
+  height: 1px;
+  width: 100px;
+  background-color: rgb(96, 168, 240);
+  left: 0;
+  border-radius: 20px;
+  transform-origin: right;
+  animation: spin 2s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.preloader {
+  height: 100vh;
+  width: 100vw;
+  background-color: inherit;
+}
+.Nobody {
+  height: 100vh;
+  width: 100vw;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+
+.c-card:hover {
+  color: teal;
+  background-color: rgb(235, 235, 235);
+  img {
+    filter: brightness(1.1);
+  }
+}
+.BlackTopStrip {
+  @media screen and (max-width: 900px) {
+    height: 120px;
+    .nav {
+      display: block;
+    }
+    li {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}
+.RealTopStrip {
+  @media screen and (max-width: 900px) {
+    height: 120px;
+    .nav {
+      display: block;
+    }
+    li {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}
+.eachFill:hover {
+  background-color: rgb(128, 10, 6);
+}

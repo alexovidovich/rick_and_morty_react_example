@@ -1,0 +1,401 @@
+@font-face {
+  font-family: RickAndMorty;
+  src: url(../media/fonts/get_schwifty-webfont.woff2);
+}
+.fill a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 1 / 4;
+  background-color: #360606;
+  color: white;
+}
+
+.fill :nth-child(1) {
+  grid-column: 1;
+}
+.fill :nth-child(1):hover {
+  color: #03afc7;
+  text-shadow: 0 0 15px #7bd853;
+  -moz-text-shadow: 0 0 20px #7bd853;
+  -webkit-text-shadow: 0 0 20px #7bd853;
+}
+.fill :nth-child(2) {
+  grid-column: 2;
+}
+.fill :nth-child(2):hover {
+  color: #03afc7;
+  text-shadow: 0 0 15px #7bd853;
+  -moz-text-shadow: 0 0 20px #7bd853;
+  -webkit-text-shadow: 0 0 20px #7bd853;
+}
+.fill :nth-child(3) {
+  grid-column: 3;
+}
+.fill :nth-child(3):hover {
+  color: #03afc7;
+  text-shadow: 0 0 15px #7bd853;
+  -moz-text-shadow: 0 0 20px #7bd853;
+  -webkit-text-shadow: 0 0 20px #7bd853;
+}
+
+.fill {
+  font-size: xx-large;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 100vw;
+  height: 100vh;
+  grid-gap: 20px;
+}
+.blacklane1 {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  background-color: black;
+  top: 0px;
+}
+.blacklane2 {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  bottom: 0px;
+  background-color: black;
+}
+#root {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.charecters {
+  height: 100%;
+  width: 33%;
+  text-align: center;
+  justify-content: center;
+  left: 33.5%;
+  top: 0;
+  align-items: center;
+  display: flex;
+}
+.locations {
+  height: 100%;
+  width: 32.5%;
+  text-align: center;
+  justify-content: center;
+  left: 0%;
+
+  top: 0;
+  align-items: center;
+  display: flex;
+}
+.episodes {
+  height: 100%;
+  width: 32.5%;
+  text-align: center;
+  justify-content: center;
+  right: 0%;
+  top: 0;
+  align-items: center;
+  display: flex;
+}
+
+.c-card {
+  font-size: 15.2px;
+  margin: 2px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #000000;
+  color: rgb(216, 216, 216);
+}
+
+.e-card {
+  font-size: 15px;
+  color: black;
+  background-color: whitesmoke;
+}
+.t-card {
+  font-size: 15px;
+  background-color: black;
+  display: grid;
+  color: tomato;
+}
+.t-card:hover {
+  background-color: snow;
+  color: black;
+}
+
+.t-card img {
+  width: 100%;
+  height: 50%;
+}
+
+.card-content img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.mainGrid {
+  padding-top: 10px;
+  height: auto;
+  display: grid;
+  padding-left: 10px;
+  padding-right: 10px;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+.description {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.SP {
+  background-color: rgb(133, 34, 84);
+  padding-top: 10px;
+}
+.e-back {
+  background-color: rgb(102, 38, 38);
+  padding-top: 10px;
+}
+.e-card {
+  background-color: rgb(21, 160, 79);
+  border: none !important;
+  border-radius: 11px;
+}
+.e-card:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(21, 95, 138);
+}
+body {
+  margin: auto;
+  font-family: RickAndMorty;
+  background-color: black;
+}
+.vid {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+.startText {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  z-index: 1;
+}
+@keyframes showText {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: #01afc7;
+  }
+}
+@keyframes BigText {
+  0% {
+    font-size: 100px;
+  }
+  100% {
+    font-size: 150px;
+  }
+}
+.btn:hover {
+  text-shadow: 0 0 20px #a9cc6b;
+  -moz-text-shadow: 0 0 20px #a9cc6b;
+  -webkit-text-shadow: 0 0 20px #a9cc6b;
+  color: #01afc7;
+  animation: BigText;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  font-size: 150px;
+}
+.btn {
+  animation: showText;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  font-size: 100px;
+}
+.BlackBottomStrip {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  bottom: 0px;
+}
+.BlackTopStrip {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: black;
+}
+.RealTopStrip {
+  background-color: inherit !important;
+  width: 100%;
+  height: 50px;
+}
+.RealBottonStrip {
+  width: 100%;
+  height: 60px;
+}
+.C-Back {
+  background-color: rgba(108, 75, 121, 0.452);
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+}
+.hoverable {
+  color: #cacaca;
+  letter-spacing: 8px;
+  display: inline-block;
+  position: relative;
+  transform: translateZ(0);
+  transition-duration: 0.5s;
+  transition-property: transform;
+}
+.hoverable:before {
+  position: absolute;
+  pointer-events: none;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(
+    center,
+    ellipse,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+.hoverable:hover,
+.hoverable:active,
+.hoverable:focus {
+  transform: translateY(-5px);
+}
+.hoverable:hover:before,
+.hoverable:active:before,
+.hoverable:focus:before {
+  transform: translateY(3px);
+  opacity: 10;
+}
+.navbar {
+  text-align: center;
+
+  float: none;
+}
+.nav {
+  text-transform: uppercase !important;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+.nav li {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+@keyframes cs {
+  0% {
+    font-size: 19px;
+    left: 50px;
+    top: 22px;
+  }
+  100% {
+    font-size: 50px;
+    left: 32px;
+    top: 5px;
+  }
+}
+.ic {
+  color: white;
+  position: fixed;
+  left: 50px;
+  top: 22px;
+  font-size: 19px;
+}
+.ic:hover {
+  font-size: 50px;
+  left: 32px;
+  top: 5px;
+  animation: cs;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+.COne-Back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.C-P {
+  background-color: rgb(62, 133, 133) !important;
+  color: lightgreen;
+
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background: inherit;
+}
+
+.LK {
+  background-color: rgb(42, 87, 88);
+  width: 680px;
+  padding: 10px 0 10px 0;
+}
+.char_d {
+  background-color: rgb(27, 34, 37);
+}
+.LK:hover {
+  background-color: rgb(17, 67, 160);
+}
+.oneEP:hover {
+  background-color: rgb(38, 114, 82);
+}
+.EP {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 680px;
+}
+.mainC-card {
+  width: 680px;
+  background-color: transparent;
+  padding: 10px 10px 0 10px;
+}
+.wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.innergap {
+  display: grid;
+  /* column-gap: 10px; */
+}
+.preloader {
+  background-color: inherit !important;
+  z-index: -2;
+}
